@@ -5,6 +5,7 @@ public class QuickSort {
     //Average case O(nlogn)
     //Worst case O(n^2)
     //Improvement: Choosing median value for initial pivot would make sure we don't get O(n^2)
+    //  and it would be O(nlogn) worst case.
 
     private static int partition(int[] array, int start, int end){
 
