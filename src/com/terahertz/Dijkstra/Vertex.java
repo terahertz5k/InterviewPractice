@@ -5,16 +5,15 @@ import java.util.LinkedList;
 
 public class Vertex implements Comparable<Vertex>{
 
-    public final String name;
-    public ArrayList<Edge> neighbors;
-    public LinkedList<Vertex> path;
-    public double minDistance = Double.POSITIVE_INFINITY;
-    public Vertex previous;
+    private final String name;
+    final ArrayList<Edge> neighbors;
+    LinkedList<Vertex> path;
+    double minDistance = Double.POSITIVE_INFINITY;
 
-    public Vertex(String name){
+    Vertex(String name){
         this.name = name;
-        neighbors = new ArrayList<Edge>();
-        path = new LinkedList<Vertex>();
+        neighbors = new ArrayList<>();
+        path = new LinkedList<>();
     }
 
     public String toString(){

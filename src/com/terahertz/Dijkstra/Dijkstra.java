@@ -37,7 +37,7 @@ public class Dijkstra {
 
     }
 
-    public void calculate(Vertex source){
+    private void calculate(Vertex source){
 
         // Algo:
         // 1. Take the unvisited node with minimum weight.
@@ -46,7 +46,7 @@ public class Dijkstra {
         // Repeat the process till all the connected nodes are visited.
 
         source.minDistance = 0;
-        PriorityQueue<Vertex> queue = new PriorityQueue<Vertex>();
+        PriorityQueue<Vertex> queue = new PriorityQueue<>();
         queue.add(source);
 
         while(!queue.isEmpty()){
@@ -60,7 +60,7 @@ public class Dijkstra {
                     neighbor.target.minDistance = newDist;
 
                     //Take the path until now and add the new node
-                    neighbor.target.path = new LinkedList<Vertex>(u.path);
+                    neighbor.target.path = new LinkedList<>(u.path);
                     neighbor.target.path.add(u);
 
                     //Re-add the node with the new distance
