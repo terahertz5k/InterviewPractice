@@ -2,7 +2,7 @@ package com.terahertz.ReverseString;
 
 public class ReverseString {
 
-    public static String reverseStringInPlaceWithStringBuilder(String text){
+    private static String reverseStringInPlaceWithStringBuilder(String text){
         StringBuilder sb = new StringBuilder(text);
         for(int i = 0; i < text.length()/2; i++){
             char temp = sb.charAt(i);

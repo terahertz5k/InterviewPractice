@@ -2,7 +2,7 @@ package com.terahertz.FizzBuzz;
 
 public class FizzBuzz {
 
-    public static void FizzBuzz(int n){
+    private static void FizzBuzz(int n){
 
         for(int i = 1; i <= n; i++){
 

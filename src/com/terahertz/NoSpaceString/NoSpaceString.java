@@ -7,7 +7,6 @@ public class NoSpaceString {
 
     private static boolean breakWordsDP(Set<String> dict, String noSpaces){
         int T[][] = new int[noSpaces.length()][noSpaces.length()];
-        int[][] Y = new int[noSpaces.length()][noSpaces.length()];
 
         for(int i = 0; i < noSpaces.length(); i++){
             for( int j = 0; j < noSpaces.length(); j++){
